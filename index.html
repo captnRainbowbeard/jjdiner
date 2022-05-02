@@ -15,10 +15,13 @@
 
 
 <header>
+  <div data-scroll-container>
+
   <div class="container-fluid">
     <div class="container">
-  <div class="row">
+  <div class="row" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">
     <div class="col-7" id="column1">
+
 
       <div id="para1">
     <p> We Are Milans Events </p>
@@ -34,6 +37,8 @@
   </div>
 
   </div>
+</div>
+</div>
 </header>
 
 <div class="container-fluid" id="jj" >
@@ -64,7 +69,17 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js">
+    </script>
+<script>
 
+const scroller = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true
+});
 
+ </script>
   </body>
 </html>
